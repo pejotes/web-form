@@ -7,7 +7,6 @@
                     <input class="checkbox" type="checkbox"
                            name="{{$.field.Name}}"
                            value="{{or $opt.Value $opt.Label}}"
-                            {{- if $defaultValue.Has (or $opt.Value $opt.Label)}} checked{{- end}}
                             {{- if $.field.Disabled}} disabled{{- end}}
                     />
                     {{or $opt.Label $opt.Value}}
